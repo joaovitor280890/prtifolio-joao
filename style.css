@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@100;600 & family= Roboto:ital,wght@0,400;0,500;0,700;1,300;1,500 & display= troca');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,500&display=swap');
+
+/*RESETE*/
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html 
+{
+    font-size: 10px;
+    font-family: 'Roboto', 'Arial', Helvetica, sans-serif ;
+    scroll-behavior: smooth;
+}
+
+header
+{
+    display: flex;
+    background-color: #5a10c2;
+    width: auto;
+    line-height: 5px;
+    
+}
+
+#navbar 
+{
+    display: flex;
+    position: relative;
+    background-color: #edf058;
+    width: 100%;
+    min-height: 50px;
+    margin: auto;
+}
+
+img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p
+{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05;
+}
+
+.container 
+{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title
+{
+    font-size: 4rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+/*Seção Header*/
+
+#header {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+#header .header img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+#header .header .saudacao {
+    display: flex;
+    font-family: "Dancing Script", Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Seção de barra de navegação*/
+
+#navbar .nav 
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+#navbar .navbar {
+    width: 100%;
+}
+
+
+#navbar .nav .lists {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+#navbar .lists a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #5a10b5;
+    margin: 10px auto;
+    height: 50px;
+    width: 90%;
+}
+
+#navbar .lists a {
+    color: white;
+    font-size: 25px;
+    font-family: "Dancing Script", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/*Seção de apresentação*/
+
+#presentation 
+{
+    background-image: url(/imagem/971.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#presentation h1 
+{
+    display: block;
+    width: fit-content;
+    font-size: 5rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#presentation h1:nth-child(1) 
+{
+    animation-delay: .8s;
+}
+#presentation h1:nth-child(2) 
+{
+    animation-delay: 1.8s;
+}
+#presentation h1:nth-child(3) 
+{
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 2.8s;
+}
+
+#presentation .cta 
+{
+    display: inline-block;
+    padding: 10px 30px;
+    color: gold;
+    background-color: transparent;
+    border: 3px solid gold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 20px;
+    transition: .4s ease;
+    transition-property: background-color, color;
+}
+
+#presentation .cta:hover 
+{
+    color: white;
+    font-weight: 700;
+    background-color: blue;
+}
+
+#presentation h1 span 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+    background-color: gold;
+}
+
+#presentation h1:nth-child(1) span
+{
+    animation-delay: .5s;
+}
+#presentation h1:nth-child(2) span 
+{
+    animation-delay: 1.5s;
+}
+#presentation h1:nth-child(3) span 
+{
+    animation-delay: 2.5s;
+}
+
+#presentation::after 
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/*Seção de Portfólio*/
+
+#portfolio .portfolio 
+{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#portfolio .portfolio header h1
+{
+    margin-bottom: 50px;
+}
+
+#portfolio .all-projects
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#portfolio .project-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#portfolio .project-info
+{
+    display: flex;
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #5a10b5 0%, #002349);
+    color: white;
+}
+
+#portfolio .project-info h1
+{
+    font-size: 4rem;
+    font-weight: 500px;
+}
+
+#portfolio .project-info h2
+{
+    font-size: 1.8rem;
+    font-weight: 500px;
+    margin-top: 10px;
+}
+
+#portfolio .project-img
+{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#portfolio .project-img:after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.7;
+}
+
+#portfolio .project-item:hover .project-img img
+{
+    transform: scale(1.1);
+}
+
+#portfolio .project-img img
+{
+    transition: 0.5s ease transform;
+}
+
+/*SEÇÃO RODAPÉ*/
+
+#navibar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    font-size: 25px;
+    border: 1px solid #000;
+    background-color: #5a10c2;
+    color: black;
+}
+
+.box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 2s ease;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.box:hover{
+    width: 100%;
+    background: #edf058;
+    border-radius: 50px;
+    color: white;
+    box-shadow: 0 0 50px;
+    position: inherit;
+}
+
+.box:nth-child(1):hover{
+    background: #025183;
+    color: white;
+    box-shadow: 0 0 20px;
+}
+
+.box:nth-child(2):hover{
+    background: #025183;
+    color: white;
+    box-shadow: 0 0 50px;
+}
+
+.box:nth-child(3):hover{
+    background: #00b61f;
+    color: white;
+    box-shadow: 0 0 50px;
+}
+
+.box:nth-child(4):hover{
+    background: #000;
+    color: white;
+    box-shadow: 0 0 50px;
+}
+
+.box .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: blueviolet;
+    margin-right: 10px;
+    transition: all .4s ease;
+    position: relative;
+}
+
+#navibar .box p{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+
+/*Keyframes*/
+
+@keyframes text_reveal 
+{
+    100%{
+        color: white;
+        font-weight: 500px;
+    }
+}
+
+@keyframes text_reveal_box 
+{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal_name 
+{
+    100%{
+        color: gold;
+        font-weight: 500px;
+    }
+}
+
+
+
+/*Media Query*/
+
+@media only screen and (min-width: 768px)
+{
+    #portfolio .project-item {
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #portfolio .all-projects .project-info {
+        height: 100%;
+    }
+    #portfolio .all-projects .project-img {
+        height: 100%;
+    }
+    #portfolio .project-item:nth-child(even) {[
+        flex-direction: row-reverse;
+    ]}
+}
