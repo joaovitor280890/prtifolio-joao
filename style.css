@@ -460,7 +460,7 @@ p
     #portfolio .all-projects .project-img {
         height: 100%;
     }
-    #portfolio .project-item:nth-child(even) {[
+    #portfolio .project-item:nth-child(even) {
         flex-direction: row-reverse;
-    ]}
+    }
 }
